@@ -1,0 +1,40 @@
+## ■■ Borrar reglas previas al cargar ■■■■■■■■■■■■■■■■■■■■■■■■■
+-D
+### ■■ Buffer (aumentar si se pierden eventos) ■■■■■■■■■■■■■■■■■■
+-b 8192
+### ■■ Fallos: 1=log, 2=panic ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+-f 1
+### ■■ Acceso a archivos de autenticación ■■■■■■■■■■■■■■■■■■■■■■
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /etc/sudoers -p wa -k sudoers
+-w /etc/sudoers.d/ -p wa -k sudoers
+### ■■ Cambios en SSH ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+-w /etc/ssh/sshd_config -p wa -k sshd
+### ■■ Uso de sudo ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+-w /usr/bin/sudo -p x -k sudo_exec
+### ■■ Escalada de privilegios ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# Cambiamos b64 por aarch64
+-a always,exit -F arch=aarch64 -S setuid -k privilege_escalation
+-a always,exit -F arch=aarch64 -S setgid -k privilege_escalation
+# -a always,exit -F arch=b64 -S setuid -k privilege_escalation
+# -a always,exit -F arch=b64 -S setgid -k privilege_escalation
+### ■■ Modificación del sistema de archivos crítico ■■■■■■■■■■■■■
+-w /sbin/insmod -p x -k kernel_modules
+-w /sbin/rmmod -p x -k kernel_modules
+-w /etc/cron.d -p wa -k cron
+-w /etc/crontab -p wa -k cron
+### ■■ Conexiones de red ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# Cambiamos b64 por aarch64
+-a always,exit -F arch=aarch64 -S connect -k network_connect
+# -a always,exit -F arch=b64 -S connect -k network_connect
+### ■■ Intentos de acceso fallidos ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# Cambiamos b64 por aarch64 y 'open' por 'openat'
+-a always,exit -F arch=aarch64 -S openat -F exit=-EACCES -k access_denied
+-a always,exit -F arch=aarch64 -S openat -F exit=-EPERM -k access_denied
+# -a always,exit -F arch=b64 -S open -F exit=-EACCES -k access_denied
+# -a always,exit -F arch=b64 -S open -F exit=-EPERM -k access_denied
+### ■■ Hacer las reglas inmutables (requiere reboot para cambiar)
+### Descomenta solo cuando estés seguro de las reglas:
+-e 2

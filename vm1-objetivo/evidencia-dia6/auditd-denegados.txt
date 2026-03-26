@@ -1,0 +1,258 @@
+----
+time->Tue Mar 24 19:31:42 2026
+type=PROCTITLE msg=audit(1774380702.603:662): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SOCKADDR msg=audit(1774380702.603:662): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1774380702.603:662): arch=c00000b7 syscall=206 success=yes exit=1072 a0=3 a1=ffffe68521b0 a2=430 a3=0 items=0 ppid=2077 pid=2090 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=2 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1774380702.603:662): auid=1000 ses=2 subj=unconfined op=add_rule key="access_denied" list=4 res=1
+----
+time->Tue Mar 24 19:31:42 2026
+type=PROCTITLE msg=audit(1774380702.603:663): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SOCKADDR msg=audit(1774380702.603:663): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1774380702.603:663): arch=c00000b7 syscall=206 success=yes exit=1072 a0=3 a1=ffffe68521b0 a2=430 a3=0 items=0 ppid=2077 pid=2090 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=2 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1774380702.603:663): auid=1000 ses=2 subj=unconfined op=add_rule key="access_denied" list=4 res=1
+----
+time->Tue Mar 24 21:51:51 2026
+type=PROCTITLE msg=audit(1774389111.218:1950): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774389111.218:1950): item=0 name="/dev/tty0" inode=15 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=04:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389111.218:1950): cwd="/home/adminlab/lab-hardening"
+type=SYSCALL msg=audit(1774389111.218:1950): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bae223651618 a2=2 a3=0 items=1 ppid=1410 pid=3508 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=2 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:51:51 2026
+type=PROCTITLE msg=audit(1774389111.218:1951): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774389111.218:1951): item=0 name="/dev/tty0" inode=15 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=04:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389111.218:1951): cwd="/home/adminlab/lab-hardening"
+type=SYSCALL msg=audit(1774389111.218:1951): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bae223651618 a2=0 a3=0 items=1 ppid=1410 pid=3508 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=2 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:51:51 2026
+type=PROCTITLE msg=audit(1774389111.218:1952): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774389111.218:1952): item=0 name="/dev/tty0" inode=15 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=04:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389111.218:1952): cwd="/home/adminlab/lab-hardening"
+type=SYSCALL msg=audit(1774389111.218:1952): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bae223651618 a2=1 a3=0 items=1 ppid=1410 pid=3508 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=2 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:51:51 2026
+type=PROCTITLE msg=audit(1774389111.218:1953): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774389111.218:1953): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389111.218:1953): cwd="/home/adminlab/lab-hardening"
+type=SYSCALL msg=audit(1774389111.218:1953): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bae223651628 a2=2 a3=0 items=1 ppid=1410 pid=3508 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=2 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:51:51 2026
+type=PROCTITLE msg=audit(1774389111.218:1954): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774389111.218:1954): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389111.218:1954): cwd="/home/adminlab/lab-hardening"
+type=SYSCALL msg=audit(1774389111.218:1954): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bae223651628 a2=0 a3=0 items=1 ppid=1410 pid=3508 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=2 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:51:51 2026
+type=PROCTITLE msg=audit(1774389111.218:1955): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774389111.218:1955): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389111.218:1955): cwd="/home/adminlab/lab-hardening"
+type=SYSCALL msg=audit(1774389111.218:1955): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bae223651628 a2=1 a3=0 items=1 ppid=1410 pid=3508 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=2 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:52:37 2026
+type=PROCTITLE msg=audit(1774389157.960:1998): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003130002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774389157.960:1998): item=0 name="/dev/kmsg" inode=12 dev=00:05 mode=020644 ouid=0 ogid=0 rdev=01:0b nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389157.960:1998): cwd="/"
+type=SYSCALL msg=audit(1774389157.960:1998): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=eb9ae9f902b0 a2=80101 a3=0 items=1 ppid=1297 pid=3554 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:52:37 2026
+type=PROCTITLE msg=audit(1774389157.960:1999): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003130002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774389157.960:1999): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389157.960:1999): cwd="/"
+type=SYSCALL msg=audit(1774389157.960:1999): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=eb9ae9f5ec08 a2=80101 a3=0 items=1 ppid=1297 pid=3554 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:52:37 2026
+type=PROCTITLE msg=audit(1774389157.964:2005): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003130002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774389157.964:2005): item=0 name="/proc/1/environ" inode=1639 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389157.964:2005): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774389157.964:2005): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffe5523640 a2=80000 a3=0 items=1 ppid=1297 pid=3554 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="systemctl" exe="/usr/bin/systemctl" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:52:37 2026
+type=PROCTITLE msg=audit(1774389157.969:2008): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003130002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774389157.969:2008): item=0 name="/dev/kmsg" inode=12 dev=00:05 mode=020644 ouid=0 ogid=0 rdev=01:0b nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389157.969:2008): cwd="/"
+type=SYSCALL msg=audit(1774389157.969:2008): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=f641ac1702b0 a2=80101 a3=0 items=1 ppid=1297 pid=3560 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:52:37 2026
+type=PROCTITLE msg=audit(1774389157.970:2009): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003130002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774389157.970:2009): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389157.970:2009): cwd="/"
+type=SYSCALL msg=audit(1774389157.970:2009): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=f641ac13ec08 a2=80101 a3=0 items=1 ppid=1297 pid=3560 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Tue Mar 24 21:52:37 2026
+type=PROCTITLE msg=audit(1774389157.973:2015): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003130002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774389157.973:2015): item=0 name="/proc/1/environ" inode=1639 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774389157.973:2015): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774389157.973:2015): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffcb985dd0 a2=80000 a3=0 items=1 ppid=1297 pid=3560 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="systemctl" exe="/usr/bin/systemctl" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 18:35:59 2026
+type=PROCTITLE msg=audit(1774550159.127:86): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SOCKADDR msg=audit(1774550159.127:86): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1774550159.127:86): arch=c00000b7 syscall=206 success=yes exit=1072 a0=3 a1=ffffc28837a0 a2=430 a3=0 items=0 ppid=504 pid=546 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1774550159.127:86): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="access_denied" list=4 res=1
+----
+time->Thu Mar 26 18:35:59 2026
+type=PROCTITLE msg=audit(1774550159.127:87): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SOCKADDR msg=audit(1774550159.127:87): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1774550159.127:87): arch=c00000b7 syscall=206 success=yes exit=1072 a0=3 a1=ffffc28837a0 a2=430 a3=0 items=0 ppid=504 pid=546 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1774550159.127:87): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="access_denied" list=4 res=1
+----
+time->Thu Mar 26 18:35:59 2026
+type=PROCTITLE msg=audit(1774550159.491:242): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A6500313237002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774550159.491:242): item=0 name="/dev/console" inode=14 dev=00:05 mode=020600 ouid=0 ogid=0 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774550159.491:242): cwd="/"
+type=SYSCALL msg=audit(1774550159.491:242): arch=c00000b7 syscall=56 success=no exit=-1 a0=ffffffffffffff9c a1=ee367794ec08 a2=80101 a3=0 items=1 ppid=1 pid=756 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 18:35:59 2026
+type=PROCTITLE msg=audit(1774550159.539:249): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A6500313232002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774550159.539:249): item=0 name="/proc/1/environ" inode=9540 dev=00:2e mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774550159.539:249): cwd="/"
+type=SYSCALL msg=audit(1774550159.539:249): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffdb325ac0 a2=80000 a3=0 items=1 ppid=1 pid=743 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-logind" exe="/usr/lib/systemd/systemd-logind" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 18:35:59 2026
+type=PROCTITLE msg=audit(1774550159.943:339): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A6500313236002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774550159.943:339): item=0 name="/proc/1/environ" inode=9865 dev=00:2f mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774550159.943:339): cwd="/"
+type=SYSCALL msg=audit(1774550159.943:339): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffd14c45b0 a2=80000 a3=0 items=1 ppid=1 pid=913 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-timedat" exe="/usr/lib/systemd/systemd-timedated" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.549:752): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003237002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774551677.549:752): item=0 name="/proc/1/environ" inode=554 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.549:752): cwd="/"
+type=SYSCALL msg=audit(1774551677.549:752): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffcf9d56c0 a2=80000 a3=0 items=1 ppid=1 pid=1440 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemd" exe="/usr/lib/systemd/systemd" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.561:754): proctitle="/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator"
+type=PATH msg=audit(1774551677.561:754): item=0 name="/proc/1/environ" inode=554 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.561:754): cwd="/"
+type=SYSCALL msg=audit(1774551677.561:754): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffc01f0d00 a2=80000 a3=0 items=1 ppid=1444 pid=1445 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="30-systemd-envi" exe="/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.564:755): proctitle=2F7573722F6C69622F73797374656D642F757365722D67656E657261746F72732F73797374656D642D7864672D6175746F73746172742D67656E657261746F72002F72756E2F757365722F313030302F73797374656D642F67656E657261746F72002F72756E2F757365722F313030302F73797374656D642F67656E65726174
+type=PATH msg=audit(1774551677.564:755): item=0 name="/proc/1/environ" inode=554 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.564:755): cwd="/"
+type=SYSCALL msg=audit(1774551677.564:755): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffca5d2750 a2=80000 a3=0 items=1 ppid=1446 pid=1447 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemd-xdg-aut" exe="/usr/lib/systemd/user-generators/systemd-xdg-autostart-generator" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.572:757): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003237002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774551677.572:757): item=0 name="/sys/module/fuse/uevent" inode=13491 dev=00:18 mode=0100200 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.572:757): cwd="/"
+type=SYSCALL msg=audit(1774551677.572:757): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffcf9d5460 a2=80100 a3=0 items=1 ppid=1 pid=1440 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemd" exe="/usr/lib/systemd/systemd" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.572:758): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003237002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774551677.572:758): item=0 name="/sys/module/configfs/uevent" inode=12555 dev=00:18 mode=0100200 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.572:758): cwd="/"
+type=SYSCALL msg=audit(1774551677.572:758): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffcf9d5460 a2=80100 a3=0 items=1 ppid=1 pid=1440 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemd" exe="/usr/lib/systemd/systemd" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.619:762): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003132002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.619:762): item=0 name="/dev/kmsg" inode=12 dev=00:05 mode=020644 ouid=0 ogid=0 rdev=01:0b nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.619:762): cwd="/"
+type=SYSCALL msg=audit(1774551677.619:762): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=e359235702b0 a2=80101 a3=0 items=1 ppid=1440 pid=1449 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.620:763): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003132002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.620:763): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.620:763): cwd="/"
+type=SYSCALL msg=audit(1774551677.620:763): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=e3592353ec08 a2=80101 a3=0 items=1 ppid=1440 pid=1449 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.621:766): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003132002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.621:766): item=0 name="/proc/1/environ" inode=554 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.621:766): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774551677.621:766): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffc5ff6630 a2=80000 a3=0 items=1 ppid=1440 pid=1449 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemctl" exe="/usr/bin/systemctl" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.621:768): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003333002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.621:768): item=0 name="/dev/kmsg" inode=12 dev=00:05 mode=020644 ouid=0 ogid=0 rdev=01:0b nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.621:768): cwd="/"
+type=SYSCALL msg=audit(1774551677.621:768): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=e0f4cf3d02b0 a2=80101 a3=0 items=1 ppid=1440 pid=1450 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.621:769): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003333002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.621:769): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.621:769): cwd="/"
+type=SYSCALL msg=audit(1774551677.621:769): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=e0f4cf39ec08 a2=80101 a3=0 items=1 ppid=1440 pid=1450 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.623:773): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003333002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.623:773): item=0 name="/proc/1/environ" inode=554 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.623:773): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774551677.623:773): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffda671b20 a2=80000 a3=0 items=1 ppid=1440 pid=1450 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemctl" exe="/usr/bin/systemctl" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.628:776): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003239002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.628:776): item=0 name="/dev/kmsg" inode=12 dev=00:05 mode=020644 ouid=0 ogid=0 rdev=01:0b nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.628:776): cwd="/"
+type=SYSCALL msg=audit(1774551677.628:776): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=e30bc1c902b0 a2=80101 a3=0 items=1 ppid=1440 pid=1451 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.628:777): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003239002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.628:777): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.628:777): cwd="/"
+type=SYSCALL msg=audit(1774551677.628:777): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=e30bc1c5ec08 a2=80101 a3=0 items=1 ppid=1440 pid=1451 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:01:17 2026
+type=PROCTITLE msg=audit(1774551677.628:780): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003239002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006175746F
+type=PATH msg=audit(1774551677.628:780): item=0 name="/proc/1/environ" inode=554 dev=00:19 mode=0100400 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774551677.628:780): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774551677.628:780): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffd1809ac0 a2=80000 a3=0 items=1 ppid=1440 pid=1451 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="systemctl" exe="/usr/bin/systemctl" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:17:46 2026
+type=PROCTITLE msg=audit(1774552666.608:1373): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774552666.608:1373): item=0 name="/dev/tty0" inode=15 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=04:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774552666.608:1373): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774552666.608:1373): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=b068f9fb1618 a2=2 a3=0 items=1 ppid=2621 pid=2630 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts2 ses=8 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:17:46 2026
+type=PROCTITLE msg=audit(1774552666.608:1374): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774552666.608:1374): item=0 name="/dev/tty0" inode=15 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=04:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774552666.608:1374): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774552666.608:1374): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=b068f9fb1618 a2=0 a3=0 items=1 ppid=2621 pid=2630 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts2 ses=8 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:17:46 2026
+type=PROCTITLE msg=audit(1774552666.608:1375): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774552666.608:1375): item=0 name="/dev/tty0" inode=15 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=04:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774552666.608:1375): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774552666.608:1375): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=b068f9fb1618 a2=1 a3=0 items=1 ppid=2621 pid=2630 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts2 ses=8 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:17:46 2026
+type=PROCTITLE msg=audit(1774552666.608:1376): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774552666.608:1376): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774552666.608:1376): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774552666.608:1376): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=b068f9fb1628 a2=2 a3=0 items=1 ppid=2621 pid=2630 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts2 ses=8 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:17:46 2026
+type=PROCTITLE msg=audit(1774552666.608:1377): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774552666.608:1377): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774552666.608:1377): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774552666.608:1377): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=b068f9fb1628 a2=0 a3=0 items=1 ppid=2621 pid=2630 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts2 ses=8 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:17:46 2026
+type=PROCTITLE msg=audit(1774552666.608:1378): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71
+type=PATH msg=audit(1774552666.608:1378): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774552666.608:1378): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774552666.608:1378): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=b068f9fb1628 a2=1 a3=0 items=1 ppid=2621 pid=2630 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts2 ses=8 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:40:11 2026
+type=PROCTITLE msg=audit(1774554011.524:1779): proctitle=73657470726976002D2D7265756964006D616E002D2D7265676964006D616E002D2D696E69742D67726F757073002D2D002F7573722F62696E2F6D616E6462002D7071
+type=PATH msg=audit(1774554011.524:1779): item=0 name="/root/.manpath" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774554011.524:1779): cwd="/"
+type=SYSCALL msg=audit(1774554011.524:1779): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=bcd364021060 a2=0 a3=0 items=1 ppid=3086 pid=3087 auid=1000 uid=6 gid=12 euid=6 suid=6 fsuid=6 egid=12 sgid=12 fsgid=12 tty=pts2 ses=3 comm="mandb" exe="/usr/bin/mandb" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 19:47:06 2026
+type=PROCTITLE msg=audit(1774554426.253:4606): proctitle=73657470726976002D2D7265756964006D616E002D2D7265676964006D616E002D2D696E69742D67726F757073002D2D002F7573722F62696E2F6D616E6462002D7071
+type=PATH msg=audit(1774554426.253:4606): item=0 name="/root/.manpath" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774554426.253:4606): cwd="/"
+type=SYSCALL msg=audit(1774554426.253:4606): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=c411f0b24060 a2=0 a3=0 items=1 ppid=63186 pid=63187 auid=1000 uid=6 gid=12 euid=6 suid=6 fsuid=6 egid=12 sgid=12 fsgid=12 tty=pts2 ses=3 comm="mandb" exe="/usr/bin/mandb" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 20:12:05 2026
+type=PROCTITLE msg=audit(1774555925.481:4916): proctitle=2F7573722F6C69622F73797374656D642F73797374656D642D6578656375746F72002D2D646573657269616C697A65003637002D2D6C6F672D6C6576656C00696E666F002D2D6C6F672D746172676574006A6F75726E616C2D6F722D6B6D7367
+type=PATH msg=audit(1774555925.481:4916): item=0 name="/dev/console" inode=14 dev=00:05 mode=020620 ouid=0 ogid=5 rdev=05:01 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774555925.481:4916): cwd="/"
+type=SYSCALL msg=audit(1774555925.481:4916): arch=c00000b7 syscall=56 success=no exit=-1 a0=ffffffffffffff9c a1=e9582f63ec08 a2=80101 a3=0 items=1 ppid=1 pid=65534 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="9" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key="access_denied"
+----
+time->Thu Mar 26 20:48:28 2026
+type=PROCTITLE msg=audit(1774558108.554:5377): proctitle=636174002F6574632F736861646F77
+type=PATH msg=audit(1774558108.554:5377): item=0 name="/etc/shadow" inode=395495 dev=fc:00 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1774558108.554:5377): cwd="/home/adminlab"
+type=SYSCALL msg=audit(1774558108.554:5377): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffffffffffff9c a1=ffffea103756 a2=0 a3=0 items=1 ppid=65716 pid=65717 auid=1000 uid=33 gid=33 euid=33 suid=33 fsuid=33 egid=33 sgid=33 fsgid=33 tty=pts1 ses=3 comm="cat" exe="/usr/bin/cat" subj=unconfined key="access_denied"

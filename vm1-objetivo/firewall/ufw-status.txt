@@ -1,0 +1,10 @@
+Status: active
+Logging: on (medium)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     LIMIT IN    Anywhere                   # SSH con rate limit
+22/tcp (v6)                LIMIT IN    Anywhere (v6)              # SSH con rate limit
+

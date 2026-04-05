@@ -1,0 +1,39 @@
+groups:
+  - name: lab-hardening-alerts
+    rules:
+
+      - alert: NodeDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Nodo caído: {{ $labels.instance }}"
+          description: "El nodo {{ $labels.instance }} lleva más de 1 minuto sin responder."
+
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "CPU alta en {{ $labels.instance }}"
+          description: "CPU al {{ $value | printf \"%.1f\" }}% en {{ $labels.instance }}"
+
+      - alert: LowMemory
+        expr: (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 < 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Memoria baja en {{ $labels.instance }}"
+          description: "Solo {{ $value | printf \"%.1f\" }}% de memoria disponible."
+
+      - alert: DiskSpaceRunningOut
+        expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100 < 15
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disco casi lleno en {{ $labels.instance }}"
+          description: "Solo {{ $value | printf \"%.1f\" }}% de espacio libre en /"

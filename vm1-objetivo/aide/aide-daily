@@ -1,0 +1,8 @@
+# Verificación diaria a las 03:00 AM
+0 3 * * * root /usr/bin/aide --check --config /etc/aide/aide.conf 2>&1 \
+  | /usr/bin/logger -t AIDE -p security.warn
+
+# Actualización dominical a las 04:00 AM
+0 4 * * 0 root /usr/bin/aide --update --config /etc/aide/aide.conf 2>&1 \
+  && cp /var/lib/aide/aide.db.new /var/lib/aide/aide.db \
+  && /usr/bin/logger -t AIDE -p security.info 'Base de datos actualizada'

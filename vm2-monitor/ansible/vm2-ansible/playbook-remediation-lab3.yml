@@ -1,0 +1,80 @@
+---
+- name: CIS Level 1 — Remediacion Lab 3 — Ubuntu 24.04
+  hosts: vm1_objetivo
+  become: yes
+  tasks:
+    # 1: Longitud minima de contrasena (CIS 5.4.1)
+    - name: CIS | password minlen = 12
+      lineinfile:
+        path: /etc/security/pwquality.conf
+        regexp: '^(#\s*)?minlen'
+        line: 'minlen = 12'
+        state: present
+        create: yes
+    # 2: Reintentos de contrasena
+    - name: CIS | password retry = 3
+      lineinfile:
+        path: /etc/security/pwquality.conf
+        regexp: '^(#\s*)?retry'
+        line: 'retry = 3'
+        state: present
+        create: yes
+    # 3: umask del sistema
+    - name: CIS | umask 027 en login.defs
+      lineinfile:
+        path: /etc/login.defs
+        regexp: "^UMASK"
+        line: 'UMASK 027'
+    # 4: Core dumps deshabilitados
+    - name: CIS | coredump Storage=none
+      lineinfile:
+        path: /etc/systemd/coredump.conf
+        regexp: "^(#)?Storage"
+        line: 'Storage=none'
+        create: yes
+    # 5: Backtraces en core dumps
+    - name: CIS | coredump ProcessSizeMax=0
+      lineinfile:
+        path: /etc/systemd/coredump.conf
+        regexp: "^(#)?ProcessSizeMax"
+        line: 'ProcessSizeMax=0'
+        create: yes
+    # 6: Timeout de sesion SSH (Ubuntu 24.04: ClientAliveInterval)
+    - name: CIS | SSH ClientAliveInterval 900
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "^ClientAliveInterval"
+        line: 'ClientAliveInterval 900'
+      notify: Restart SSH
+    # 7: Limite de sesiones simultaneas
+    - name: CIS | maxlogins 10 en limits.conf
+      lineinfile:
+        path: /etc/security/limits.conf
+        line: "* hard maxlogins 10"
+        state: present
+    # 8: Permisos de /etc/crontab
+    - name: CIS | crontab mode 0600
+      file:
+        path: /etc/crontab
+        mode: "0600"
+        owner: root
+        group: root
+    # 9: logrotate activo (CORREGIDO: Subparámetros indentados)
+    - name: CIS | logrotate.timer habilitado
+      systemd:
+        name: logrotate.timer
+        enabled: yes
+        state: started
+
+    # 10: Eliminar telnet (CORREGIDO: Eliminado 'handlers:' de aquí dentro)
+    - name: CIS | telnet desinstalado
+      apt:
+        name: telnet
+        state: absent
+        purge: yes
+  # HANDLERS (CORREGIDO: Al mismo nivel que 'tasks', no dentro de una tarea)
+  handlers:
+    - name: Restart SSH
+      systemd:
+        name: ssh
+        state: restarted

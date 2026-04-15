@@ -36,3 +36,7 @@ rsyslog · fail2ban · UFW · nftables · Lynis · AIDE
 
 # Lab 2: Monitoreo de Infraestructura
 Ver [README.md](./docs/lab2/README.md)
+
+# Lab 3: Auditoría y Cumplimiento CIS con OpenSCAP
+Ver [README.md](./docs/lab3/README.md)
+

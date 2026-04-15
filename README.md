@@ -35,4 +35,4 @@ sshd · PAM · Google Authenticator · sysctl · AppArmor · auditd
 rsyslog · fail2ban · UFW · nftables · Lynis · AIDE
 
 # Lab 2: Monitoreo de Infraestructura
-Ver [README.md](./docs/README.md)
+Ver [README.md](./docs/lab2/README.md)

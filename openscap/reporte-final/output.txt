@@ -1,0 +1,6 @@
+=== REPORTE CIS Level 1 — Ubuntu 24.04 ===
+Fecha: 2026-04-15
+SCORE: 100.000000% → 100.000000%
+PASS: 257 → 260 (+3)
+FAIL: 88 → 85 (-3)
+Controles remediados: 3

@@ -1,0 +1,4 @@
+Remediaciones manuales Dia 4:
+- talk/ypbind/rsh-client purgados
+- UIDs duplicados: ninguno
+- permisos cron verificados

@@ -1,0 +1,13 @@
+[Interface]
+Address = 10.0.0.1/24
+ListenPort = 51820
+PostUp = sysctl -w net.ipv4.ip_forward=1
+PostUp = iptables -A FORWARD -i wg0 -j ACCEPT
+PostDown = iptables -D FORWARD -i wg0 -j ACCEPT
+PostDown = sysctl -w net.ipv4.ip_forward=0
+
+[Peer]
+# VM2 — Cliente
+PublicKey = sp2kjH4GHF+r6e2F8vUfc0UgFWq2KEUmpMq0e5ZSlVM=
+AllowedIPs = 10.0.0.2/32
+# Llave publica VM1: GX+wWECcOTQOCd9d0URudkOa6PusOaePwDJ99KnMlzk=

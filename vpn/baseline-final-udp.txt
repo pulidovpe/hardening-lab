@@ -1,0 +1,7 @@
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                   
+UNCONN 0      0            0.0.0.0:51820      0.0.0.0:*                                             
+UNCONN 0      0            0.0.0.0:43771      0.0.0.0:*    users:(("rsyslogd",pid=4528,fd=8))       
+UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=499,fd=16))
+UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=499,fd=14))
+UNCONN 0      0            0.0.0.0:1194       0.0.0.0:*    users:(("openvpn",pid=4455,fd=5))        
+UNCONN 0      0               [::]:51820         [::]:*                                             

@@ -40,3 +40,6 @@ Ver [README.md](./docs/lab2/README.md)
 # Lab 3: Auditoría y Cumplimiento CIS con OpenSCAP
 Ver [README.md](./docs/lab3/README.md)
 
+# Lab 4: VPN y Acceso Remoto Seguro
+Ver [README.md](./docs/lab4/README.md)
+

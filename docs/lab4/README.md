@@ -1,4 +1,4 @@
-b 4: VPN y Acceso Remoto Seguro
+## 4: VPN y Acceso Remoto Seguro
 ### Comparación WireGuard vs OpenVPN vs Túneles SSH
 | Criterio | WireGuard | OpenVPN | SSH Tunnel |
 |-----------------|---------------|-------------|-------------|
